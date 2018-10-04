@@ -18,7 +18,7 @@ __branch__ = "{}" """.format(gitinfo.version, gitinfo.branch)
 
 
 class GitInfo:
-    version = 'git describe --tags --always --dirty'
+    version = 'git describe --tags'
     branch = 'git rev-parse --abbrev-ref HEAD'
 
     def __init__(self):

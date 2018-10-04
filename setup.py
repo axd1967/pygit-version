@@ -12,12 +12,12 @@ with open(os.path.join(here, 'CHANGES.rst')) as f:
     CHANGES = f.read()
 
 setup(name='pygitversion',
-      version='0.6.0',  # <grin>
+      version='0.1',  # <grin> the irony is that the script itself need the manual way to store the versioning string...
       description='Extract Git information into a file',
       long_description=README + '\n\n' + CHANGES,
       author='',
       author_email='',
-      url='',
+      url='https://github.com/axd1967/pygit-version.git',
       keywords='git',
       packages=find_packages(),
       include_package_data=True,

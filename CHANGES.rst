@@ -1,4 +1,10 @@
+Changelog
+=========
 
+0.1 (2018-09-04)
+----------------
+
+- initial version
 
 DONE
 ====
@@ -6,7 +12,8 @@ DONE
 BUSY
 ====
 
-- initial commit
 
 TODO
 ====
+
+- dirty?
