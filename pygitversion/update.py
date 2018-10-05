@@ -7,8 +7,8 @@ def update_file(filename, gitinfo):
 
     file_obj = open(filename, 'w')
     file_obj.write("""
-# source: https://packaging.python.org/guides/single-sourcing-package-version/
-# WARNING: this file is generated from script
+# idea: https://packaging.python.org/guides/single-sourcing-package-version/
+# note: this file is typically generated from script, and often versioned as template and to be ignored by Git
 
 __version__ = "{}"
 __branch__ = "{}" """.format(gitinfo.version, gitinfo.branch)
@@ -18,7 +18,7 @@ __branch__ = "{}" """.format(gitinfo.version, gitinfo.branch)
 
 
 class GitInfo:
-    version = 'git describe --tags'
+    version = 'git describe --tags --dirty'
     branch = 'git rev-parse --abbrev-ref HEAD'
 
     def __init__(self):
